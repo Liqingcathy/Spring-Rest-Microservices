@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10%;
+    width: 40%;
+    justify-content: center;
+    height: 35px;
+    /* border: 1px solid red; */
+    margin-left: 5rem;
+    
+
+}
+
+input {
+    width: 250px;
+}
+button {
+    margin-left: 50px;
+    background-color: rgb(6, 84, 58);
+    border-radius: 6px;
+    border-style: none;
+    width: 200px;
+}

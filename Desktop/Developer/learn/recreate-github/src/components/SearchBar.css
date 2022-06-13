@@ -1,0 +1,17 @@
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+input {
+    margin-left: 10%;
+    border-radius: 5px;
+  }
+  
+  .signup {
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
