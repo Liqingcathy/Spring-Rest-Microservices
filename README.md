@@ -5,6 +5,8 @@
 - DeleteMapping
 - Exception Handling
 - Validation
+- *URI Versioning
+- Serialization
 
 ### Tools
 - Eclipse Workspace
