@@ -7,7 +7,8 @@ import java.util.function.Predicate;
 
 import org.springframework.stereotype.Component;
 
-
+//Creates specification to execute dynamic queries for searching users in database
+//Creates UserDaoService class and provide corresponding search/filter User methods
 @Component
 public class UserDaoService {
 	
@@ -32,5 +33,13 @@ public class UserDaoService {
 		Predicate<? super User> predicate = user -> user.getId().equals(id); 
 		return users.stream().filter(predicate).findFirst().orElse(null);
 	}
+	
+
+	public void deleteById(int id) {
+		Predicate<? super User> predicate = user -> user.getId().equals(id); 
+		users.removeIf(predicate);
+	}
+	
+	
 
 }
