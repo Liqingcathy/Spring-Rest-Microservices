@@ -1,15 +1,18 @@
 package com.rest.webservies.restwebservies.filtering;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonFilter;
+
+//import com.fasterxml.jackson.annotation.JsonIgnore;
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //define JsonIgnore in class level or property level for response body
-@JsonIgnoreProperties("field1")
+//@JsonIgnoreProperties("field1")
+@JsonFilter("FtBeanFilter")
 public class FtBean {
 	
 	private String field1;
 	
-	@JsonIgnore
+	//@JsonIgnore
 	private String field2;
 	private String field3;
 	
